@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-size: 1em;
+    margin: .5em;
+    padding: 0;
+    text-align: right;
+    color: #DEE1E2;
+    font-family: 'Rajdhani', sans-serif;
+    animation: fadeIn 5s;
+}
+
+body {
+    min-height: calc(100vh - 3em);
+    background-color: rgba(35, 173, 53, 0.34);
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 2em auto 0;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: rgba(125, 125, 125, .81);
+    color: #B0E2FF;
+    animation: fadeIn 3s, sladeDown 2s;
+}
+
+.buttons-wrapper {
+    margin: 20px 0;
+}
+
+#result {
+    width: 97%;
+    height: 75px;
+    margin: auto;
+    padding: 1em .5em;
+    text-align: right;
+    background-color: #DEE1E2;
+    color: #5C5C5C;
+    box-shadow: -2px -2px 5px #313030, 2px 2px 5px #313030;
+}
+
+
+button {
+    float: left;
+    width: 23%;
+    height: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    color: #4D4949;
+    background-color: #E1E6E9;
+    box-shadow: -2px -2px 5px #313030, 2px 2px 5px;
+    animation: fadeIn 5s;
+    border: 1px solid #fff;
+}
+
+button.operator-btn {
+    background-color: darkgoldenrod;
+    color: #3F3939;
+}
+button.operator-btn:hover {
+    background-color: #DD9D07;
+}
+
+button.function-btn {
+    background-color: olivedrab
+}
+button.function-btn:hover {
+    background-color: #9BD61B
+}
+
+button.numeric-btn:hover {
+    background-color: #FFFFFF;
+}
+
+.row {
+    width: 100%;
+}
+
+
+#result,
+button {
+    border-radius: 5px;
+    border : none;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    font-family: 'Rajdhani', sans-serif;  
+}
+
+.clearfix {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/******* animation ********/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: show;
+    }
+}
+
+@keyframes sladeDown {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes sladeUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
